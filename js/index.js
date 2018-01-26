@@ -13,7 +13,7 @@ function quadraticEq(a, b, c) {
  if (d > 0) {
   
   let x1 = (-b + Math.sqrt(d)) / (2 * a);
-  let x2 = -b / (2 * a) + Math.sqrt(d) / (2 * a);
+  let x2 = (-b - Math.sqrt(d)) / (2 * a);
   return [x1, x2];
  }
  else if (d===0) {
