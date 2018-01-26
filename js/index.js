@@ -11,18 +11,18 @@ const d = discriminant;
 
 function quadraticEq(a, b, c) {
  if (d > 0) {
-  const twoA = parseInt(2 * a);
-  let x1 = (-b + Math.sqrt(d)) / twoA;
-  let x2 = -b / twoA + Math.sqrt(d) / twoA;
-  return x1, x2;
+  
+  let x1 = (-b + Math.sqrt(d)) / (2 * a);
+  let x2 = -b / (2 * a) + Math.sqrt(d) / (2 * a);
+  return [x1, x2];
  }
  else if (d===0) {
-  const twoA = parseInt(2 * a);
-  const x3 = -b / twoA;
+
+  const x3 = -b / (2 * a);
   return x3;
  }
  else{
-  document.write("No answer")
+  document.write("No answer");
  }
 }
 
